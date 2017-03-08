@@ -1,0 +1,4 @@
+applications:
+- name: BCDemoApp
+  mem: 1G
+  disk: 256M

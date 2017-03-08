@@ -1,0 +1,81 @@
+{% extends "hello-flask-base.html" %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="tabbable" id="tabs-265016">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#panel-542478" data-toggle="tab">Free Tier</a>
+                    </li>
+                    <li >
+                        <a href="#panel-402287" data-toggle="tab">Custom Project</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="panel-542478">
+                         <form method="post">
+                         <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+
+                             <label for="k5useremail" class="badge" >User Email Address:</label>
+                            <input id="k5useremail" name="k5useremail" class="form-control" type="text">
+                            <br/>
+                            <label for="k5project" class="badge" >User Project:</label>
+                            <select name="k5project" class="form-control" >
+                                <option value="scratch01">scratch01</option>
+                                <option value="scratch02">scratch02</option>
+                                <option value="scratch03">scratch03</option>
+                                <option value="scratch04">scratch04</option>
+                                <option value="scratch05">scratch05</option>
+                                <option value="scratch06">scratch06</option>
+                                <option value="scratch07">scratch07</option>
+                                <option value="scratch08">scratch08</option>
+                                <option value="scratch09">scratch09</option>
+                                <option value="scratch10">scratch10</option>
+                            </select>
+                            <br/>
+                            <input name="AddUser" type="submit" class="btn btn-primary btn-large" value="Add User">
+                            <input name="Logout" type="submit" class="btn btn-primary btn-large" value="Logout">
+                            </div>
+                            <div class="col-md-4">
+                            </div>
+                          </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="panel-402287">
+                         <form method="post">
+                         <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+
+                             <label for="k5useremail" class="badge" >User Email Address:</label>
+                            <input id="k5useremail" name="k5useremail" class="form-control" type="text">
+                            <br/>
+                            <label for="k5project" class="badge" >User Project:</label>
+                            <input id="k5project" name="k5project" class="form-control" type="text">
+                            <br/>
+                            <input name="AddUser" type="submit" class="btn btn-primary btn-large" value="Add User">
+                            <input name="Logout" type="submit" class="btn btn-primary btn-large" value="Logout">
+                            </div>
+                            <div class="col-md-4">
+                            </div>
+                          </div>
+                        </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

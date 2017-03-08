@@ -1,0 +1,51 @@
+{% extends "hello-flask-base.html" %}
+{% block content %}
+<form method="post">
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+            <label for="k5username" class="label label-default">Username:</label>
+            <input id="k5username" name="k5username" class="form-control" type="text">
+            <br/>
+            <label for="k5password" class="label label-default" >Password:</label>
+            <input id="k5password" name="k5password" class="form-control" type="password">
+            <br/>
+        </div>
+        <div class="col-md-3">
+            <label for="k5contract" class="label label-default">Contract:</label>
+            <select name="k5contract" class="form-control" >
+                <option value="9tmk8ynD">British Columbia - 9tmk8ynD</option>
+                <option value="YssmW1yI">UK - YssmW1yI</option>
+                <option value="OhwxxQsI">Finland - OhwxxQsI</option>
+                <option value="ejeJvawb">Germany - ejeJvawb</option>
+            </select>
+            <br/>
+            <label for="k5region" class="label label-default">Region:</label>
+            <select name="k5region" class="form-control" >
+                <option value="uk-1">uk-1</option>
+                <option value="fi-1">fi-1</option>
+                <option value="de-1">de-1</option>
+                <option value="jp-east-1">jp-east-1</option>
+                <option value="jp-west-1">jp-west-1</option>
+                <option value="jp-west-2">jp-west-2</option>
+            </select>
+            <br/>
+            <input name="Login" type="submit" class="btn btn-primary btn-large" value="Login">
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
+  </div>
+
+
+</form>
+
+
+
+
+
+{% endblock %}

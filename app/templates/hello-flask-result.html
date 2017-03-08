@@ -1,0 +1,22 @@
+{% extends "hello-flask-base.html" %}
+{% block content %}
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <div class="jumbotron">
+         <p>
+         {{ userstatus }}
+        </p>
+        <p>
+         <form method="post">
+          <input name="AddUser" type="submit" class="btn btn-primary btn-large" value="Add Another User">
+          <input name="Logout" type="submit" class="btn btn-primary btn-large" value="Logout">
+        </form>
+      </div>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+{% endblock %}
+
